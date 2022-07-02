@@ -6,11 +6,11 @@ const getPagination = (quantity, page) => {
         quantity:
             Number.isInteger(quantityInteger) && quantityInteger > 0
                 ? quantityInteger
-                : process.env.DEFAULT_QUANTITY ?? 1,
+                : process.env.DEFAULT_QUANTITY ?? 5,
         page:
             Number.isInteger(pageInteger) && pageInteger > 0
                 ? pageInteger
-                : process.env.DEFAULT_PAGE ?? 5,
+                : process.env.DEFAULT_PAGE ?? 1,
     };
 };
 
